@@ -17,11 +17,11 @@ FILE_PATH = os.environ.get('FILE_PATH', './temp')
 PROJECT_URL = os.environ.get('URL', '') # 填写项目分配的url可实现自动访问，例如：https://www.google.com，留空即不启用该功能
 INTERVAL_SECONDS = int(os.environ.get("TIME", 120))                   # 访问间隔时间，默认120s，单位：秒
 UUID = os.environ.get('UUID', 'abe2f2de-13ae-4f1f-bea5-d6c881ca3888')
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nz.abcd.com')        # 哪吒3个变量不全不运行
-NEZHA_PORT = os.environ.get('NEZHA_PORT', '5555')                  # 哪吒端口为443时开启tls
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')        # 哪吒3个变量不全不运行
+NEZHA_PORT = os.environ.get('NEZHA_PORT', '')                  # 哪吒端口为443时开启tls
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
-DOMAIN = os.environ.get('DOMAIN', 'n1.mcst.io')                 # 分配的域名或反代的域名，不带前缀，例如：n1.mcst.io
-NAME = os.environ.get('NAME', 'Vls')
+DOMAIN = os.environ.get('DOMAIN', '')                 # 分配的域名或反代的域名，不带前缀，例如：n1.mcst.io
+NAME = os.environ.get('NAME', 'nip')
 PORT = int(os.environ.get('PORT', 3000))            # http服务端口
 VPORT = int(os.environ.get('VPORT', 443))          # 节点端口,游戏玩具类需改为分配的端口,并关闭节点的tls
 
